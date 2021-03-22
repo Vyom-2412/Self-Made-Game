@@ -18,7 +18,6 @@ There will be NPCs all around the map. They will be marked as white dots on your
 For PC:-
 
 Use W,A,S,D to move
-Press spacebar to jump
 Press right mouse button to aim and left mouse button to shoot
 Use number keys to scroll through weapons
 

@@ -1,31 +1,35 @@
-class Player
+class Character
 {
    constructor(x,y)
    {
-      this.width = width;
-      this.height = height;
+      this.x = x;
+      this.y = y;
+      this.width = 50;
+      this.height = 50;
+      this.character = createSprite(this.x,this.y,this.width,this.height);
+      this.player = loadImage('Images/Player.png');
    }
    display()
    {
-      if(keyDowm("W"))
+      this.character.addImage(this.player);
+
+      if(keyDown("W"))
       {
-         player.y = player.y-10;
+         this.character.y = this.character.y-10;
       }
       else if(keyDown("S"))
       {
-         player.y = player.y + 10;
+         this.character.y = this.character.y + 10;
       }
       else if(keyDown("A"))
       {
-         player.x = player.x - 10;
+         this.character.x = this.character.x - 10;
       }
       else if(keyDown("D"))
       {
-         player.x = player.x + 10;
+         this.character.x = this.character.x + 10;
       }
-      else if(keyDown("space"))
-      {
-         player.velocityY = -10;
-      }
+
+      drawSprites();
    }
 }
